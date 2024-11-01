@@ -7,18 +7,18 @@
 body {
   font-family: 'Oswald', sans-serif;
   text-align: center;
+  overflow: hidden;
   margin: 0;
-  padding-top: 20px;
-  padding-bottom: 100px;
 }
 
 h3 {
-  margin-bottom: 8px;
+  margin-bottom: 0;
   text-align: center;
 }
 
 small {
   display: block;
+  margin-bottom: 20px;
   text-align: center;
 }
 
@@ -38,7 +38,16 @@ small {
   cursor: pointer;
   max-width: 100%;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  margin-block: 20px;
+}
+
+@media (max-width: 1024px) {
+  h3 {
+    margin-top: 10px;
+  }
+
+  .loveMe {
+    height: 420px;
+  }
 }
 
 .loveMe .fav {
